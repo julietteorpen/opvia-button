@@ -1,0 +1,114 @@
+/*------------------------------------*\
+  SETTINGS
+\*------------------------------------*/
+
+/* GLOBAL VARIABLES */
+/* Colors */
+html {
+  --color-navy: #2d3950;
+  --color-teal: #00a28d;
+  --color-offwhite: #ecedee;
+}
+/*------------------------------------*\
+GENERIC
+\*------------------------------------*/
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: var(--color-navy);
+  font-family: Montserrat, sans-serif;
+}
+
+/*------------------------------------*\
+ # CLICKER SECTION
+\*------------------------------------*/
+.btn-container {
+  display: flex;
+  flex-direction: space-between;
+  justify-content: center;
+  gap: 1rem;
+}
+.clicker-container {
+  background-color: var(--color-teal);
+  color: var(--color-offwhite);
+  border-radius: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  border: 1rem, var(--color-offwhite);
+}
+.clicker > * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.clicker-btn {
+  border: none;
+  text-align: center;
+  height: 4rem;
+  border-radius: 2%;
+  transition-duration: 0.4s;
+  font-size: 48px;
+}
+.clicker-btn:hover {
+  background-color: var(--color-navy);
+  cursor: pointer;
+  color: var(--color-offwhite);
+}
+.clicker-title {
+  justify-content: center;
+}
+/*------------------------------------*\
+  COUNT SECTION
+\*------------------------------------*/
+.count {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 10vw;
+  font-weight: bold;
+}
+.count-title {
+  font-weight: inherit;
+  font-size: 45px;
+}
+.count-total {
+  font-weight: inherit;
+  background-color: inherit;
+  color: inherit;
+  border: none;
+  font-size: 45px;
+  justify-content: center;
+  width: 20%;
+}
+/*------------------------------------*\
+  MODIFIER CLASSES
+\*------------------------------------*/
+
+/* width modifier classes */
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 30rem;
+}
+
+.width-md {
+  max-width: 30rem;
+}
+
+.width-XXsm {
+  min-width: 4rem;
+}
+
+/* stack modifier classes */
+
+.stack-sm > * + * {
+  margin-top: 0.5rem;
+}

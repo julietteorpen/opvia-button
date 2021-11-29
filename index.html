@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Opvia button</title>
+  </head>
+
+  <body>
+    <form class="clicker-container stack-sm center">
+      <h2 class="clicker-title">Counter clicker</h2>
+      <p>Keep track of your count by increasing and decreasing</p>
+      <div class="btn-container width-md">
+        <input
+          type="button"
+          id="increase"
+          class="increase clicker-btn width-XXsm"
+          value="+"
+        />
+        <input
+          type="button"
+          id="decrease"
+          class="decrease clicker-btn width-XXsm "
+          value="-"
+        />
+      </div>
+      <section class="count width-sm">
+        <label class="count-total">Count:</label>
+        <input type="number" class="count-total" value="0" readonly></input>
+      </section>
+      <input type="submit">
+    </form>
+  </body>
+
+  <script src="scripts.js"></script>
+</html>
