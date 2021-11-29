@@ -10,8 +10,8 @@
 
   <body>
     <form class="clicker-container stack-sm center">
-      <h2 class="clicker-title">Counter clicker</h2>
-      <p>Keep track of your count by increasing and decreasing</p>
+      <h2 class="clicker-title center">Counter clicker</h2>
+      <p class="center">Use these buttons to keep a track of your count!</p>
       <div class="btn-container width-md">
         <input
           type="button"
@@ -26,13 +26,16 @@
           value="-"
         />
       </div>
-      <section class="count width-sm">
-        <label class="count-total">Count:</label>
-        <input type="number" class="count-total" value="0" readonly></input>
+      <section class="count width-md center">
+        <label class="count-title">Count:</label>
+        <input type="number" id="count-total" value="0" readonly></input>
       </section>
-      <input type="submit">
+      <div class="btn-container width-md">
+      <input type="button" value="Reset" class="clicker-btn save-reset" id="reset">
+      <input type="submit" value="Save" class="clicker-btn save-reset" id = "save">
+     </div>
     </form>
   </body>
 
-  <script src="scripts.js"></script>
+  <script src="script.js"></script>
 </html>

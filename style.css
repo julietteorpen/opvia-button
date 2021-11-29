@@ -52,8 +52,8 @@ html {
   height: 4rem;
   border-radius: 2%;
   transition-duration: 0.4s;
-  font-size: 48px;
 }
+
 .clicker-btn:hover {
   background-color: var(--color-navy);
   cursor: pointer;
@@ -61,7 +61,24 @@ html {
 }
 .clicker-title {
   justify-content: center;
+  font-size: 32px;
+  margin: 0em;
+  margin-top: 0.5rem;
 }
+
+#increase {
+  font-size: 48px;
+}
+#decrease {
+  font-size: 48px;
+}
+.save-reset {
+  font-size: 16px;
+  max-height: 20px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
 /*------------------------------------*\
   COUNT SECTION
 \*------------------------------------*/
@@ -76,16 +93,17 @@ html {
 }
 .count-title {
   font-weight: inherit;
-  font-size: 45px;
+  font-size: 30px;
 }
-.count-total {
+#count-total {
   font-weight: inherit;
   background-color: inherit;
   color: inherit;
   border: none;
-  font-size: 45px;
+  font-size: 30px;
   justify-content: center;
-  width: 20%;
+  max-width: 10%;
+  gap: 0.5em;
 }
 /*------------------------------------*\
   MODIFIER CLASSES
